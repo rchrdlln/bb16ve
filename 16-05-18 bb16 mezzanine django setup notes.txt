@@ -1,0 +1,115 @@
+16-05-18 bb16 mezzanine django setup notes
+
+__ convert wordpress template(s) to mezz
+
+	start server = python manage.py runserver
+
+	it includes bootstrap, tinymce, jquery
+
+	__ create git repo 
+
+	__ set up new django install and create application
+		--the way to create mezz template is to create it in django then move over the static files
+
+__ incorporate new text
+
+__ get rid of unneeded mezz / django features
+
+
+
+
+
+
+
+
+
+*****
+
+Last login: Mon May 16 13:03:50 on ttys000
+PalmTreo650:~ fullname$ ls
+ABBYY
+Applications
+Blake Brandes on Instagram  “It was great to meet talented author Belle Boggs and her family this evening!”.html
+D.__MARGARET_P_EAGLES.5B.9_00_.MOTIONS.txt
+D.__MARGARET_P_EAGLES.5B.9_00_.MOTIONS.txt.1
+Desktop
+Documents
+Downloads
+Dropbox
+How to Handle a Tough Deposition Question-RjtnRmy0H-U.mp4
+Library
+Movies
+Music
+Pictures
+Public
+Sites
+benchbook.sog.unc.edu
+bots=off
+code
+dri.org addl files and code etc
+files
+index.html
+index.html.1
+index.html.2
+index.html.3
+index.html.4
+ncada misc
+ndom-wait
+ought - hopscotch test download.mp3
+robots=off
+viewforum.php?f=2
+viewforum.php?f=2.1
+web.archive.org
+websites
+wget-log
+wget-log.1
+wget-log.10
+wget-log.11
+wget-log.2
+wget-log.3
+wget-log.4
+wget-log.5
+wget-log.6
+wget-log.7
+wget-log.8
+wget-log.9
+www.americanbar.org
+www.aoc.state.nc.us
+www.dri.org
+www.google.com
+www.hopscotchmusicfest.com
+www.kdnuggets.com
+www.lastrhodesian.com
+www.nccourts.org
+www.onedirecttowing.com
+www.rand.org
+www.sog.unc.edu
+www.ymwlaw.com
+www1.aoc.state.nc.us
+xa.yimg.com
+PalmTreo650:~ fullname$ cd code
+PalmTreo650:code fullname$ ls
+allenlawsite		euler12			personalpage
+byte music.txt		flask-boilerplate	r26findrep
+cbinfo			flaskproj1		resumeyaml
+cbinfogh		mezz			timeentryparser
+e15			parse2yaml		yaml2json
+euler11			pdfrip
+PalmTreo650:code fullname$ mkdir bb16dj
+PalmTreo650:code fullname$ virtualenv bb16ve
+New python executable in /Users/fullname/code/bb16ve/bin/python
+Installing setuptools, pip, wheel...done.
+PalmTreo650:code fullname$ source ./bb16dj/bin/activate
+-bash: ./bb16dj/bin/activate: No such file or directory
+PalmTreo650:code fullname$ source ./bb16ve/bin/activate
+(bb16ve) PalmTreo650:code fullname$ pip install django
+Collecting django
+/Users/fullname/code/bb16ve/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:318: SNIMissingWarning: An HTTPS request has been made, but the SNI (Subject Name Indication) extension to TLS is not available on this platform. This may cause the server to present an incorrect TLS certificate, which can cause validation failures. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#snimissingwarning.
+  SNIMissingWarning
+/Users/fullname/code/bb16ve/lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:122: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Downloading Django-1.9.6-py2.py3-none-any.whl (6.6MB)
+    100% |████████████████████████████████| 6.6MB 156kB/s 
+Installing collected packages: django
+Successfully installed django-1.9.6
+(bb16ve) PalmTreo650:code fullname$ 
